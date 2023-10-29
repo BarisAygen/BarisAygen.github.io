@@ -17,12 +17,17 @@ body {
 }
 
 #links img {
-    
+    width: 50px;
+    margin-top: 2.5px;
+    margin-left: 10px;
 }
 
 #links p {
     color: white;
     font-size: 18px;
+    margin-top: 12px;
+    margin-right: 200px;
+    text-align: center;
 }
 
 .link-button {
@@ -32,10 +37,16 @@ body {
     height: 60px;
     width: 500px;
     display: flex;
+    justify-content: space-between;
 }
 
 .link-button:hover {
     border-style: dashed;
     border-color: rgb(0, 31, 45);;
     background-color:  rgb(85, 20, 145);;
+}
+
+#vsco-button img {
+    background-color: white;
+    padding: 1px;
 }
