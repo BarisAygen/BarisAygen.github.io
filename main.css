@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(85, 20, 145);
+}
+
+#profile-photo {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 15px 0 15px 0;
+}
+
+#profile p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.774);
+}
+
+#links img {
+    width: 50px;
+    margin-top: 2.5px;
+    margin-left: 10px;
+}
+
+#links p {
+    color: white;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.link-button {
+    background-color: rgb(0, 31, 45);
+    border-radius: 3%;
+    margin-bottom: 10px;
+    height: 60px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-button:hover {
+    border-style: dashed;
+    border-color: rgb(0, 31, 45);;
+    background-color:  rgb(85, 20, 145);;
+}
+
+#vsco-button img {
+    background-color: white;
+    padding: 1px;
+}
