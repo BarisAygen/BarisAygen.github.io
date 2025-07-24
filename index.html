@@ -4,70 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Baris Aygen Blog</title>
+    <title>Baris Aygen - Portfolio</title>
 </head>
-<body class="d-flex justify-content-center">
-    <div class="container text-center">
-        <div id="profile">
-            <img src="img/lalaland.png" id="profile-photo">
-            <p>Baris Aygen Blog</p>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="img/header.png" alt="Logo" class="logo">
+                <h1 class="page-title">Baris Aygen</h1>
+            </div>
+            <div class="contact-links">
+                <a href="https://linktr.ee/barisaygen" class="contact-link" target="_blank">
+                    <i class="fas fa-link"></i>
+                    <span>Linktree</span>
+                </a>
+                <a href="mailto:barisaygen7@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
         </div>
-        <div id="links" class="btn-group-vertical">
-            <button id="linkedin-button" class="link-button">
-                <img src="img/linkedin.png">
-                <p>LinkedIn</p>
-            </button>
-            <button id="github-button" class="link-button">
-                <img src="img/github.png">
-                <p>GitHub</p>
-            </button>
-            <button id="instagram-button" class="link-button">
-                <img src="img/Instagram.png">
-                <p>Instagram</p>
-            </button>
-            <button id="spotify-button" class="link-button">
-                <img src="img/Spotify.png">
-                <p>Spotify</p>
-            </button>
-            <button id="vsco-button" class="link-button">
-                <img src="img/vsco.png">
-                <p>VSCO</p>
-            </button>
-            <button id="letterboxd-button" class="link-button">
-                <img src="img/letterboxd.png">
-                <p>Letterboxd</p>
-            </button>
-            <button id="blogger-button" class="link-button">
-                <img src="img/Blogger.png">
-                <p>Story Blog</p>
-            </button>
-        </div>
-    </div>
-    <script>
-        document.getElementById('linkedin-button').addEventListener('click', () => {
-            window.location.href = 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-aygen-3ab03021a/'
-        });
-        document.getElementById('github-button').addEventListener('click', () => {
-            window.location.href = 'https://github.com/BarisAygen'
-        });
-        document.getElementById('instagram-button').addEventListener('click', () => {
-            window.location.href = 'https://www.instagram.com/barisaygn/'
-        });
-        document.getElementById('spotify-button').addEventListener('click', () => {
-            window.location.href = 'https://open.spotify.com/user/2nkesc62rr7el7b37643s71e0?si=d0d64c45dbf14d50'
-        });
-        document.getElementById('vsco-button').addEventListener('click', () => {
-            window.location.href = 'http://vsco.co/cinemelancholy?share=MTY5NzkxNTg1NQ%3D%3D'
-        });
-        document.getElementById('letterboxd-button').addEventListener('click', () => {
-            window.location.href = 'https://letterboxd.com/barisaygn/'
-        });
-        document.getElementById('blogger-button').addEventListener('click', () => {
-            window.location.href = 'https://peacemoongen.blogspot.com/'
-        });
-    </script>
-    
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Project Row 1 - Whispurr -->
+        <section class="project-row">
+            <div class="project-info">
+                <h2 class="project-title">Project Name 1</h2>
+                <p class="project-description">
+                    This is a detailed description of the first project. It explains the technologies used, 
+                    the problem it solves, and the key features implemented. The description provides enough 
+                    context for visitors to understand the scope and impact of the work.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/whispurr1.png" alt="Project Screenshot 1" class="screenshot-ios">
+                <img src="img/whispurr2.png" alt="Project Screenshot 2" class="screenshot-ios">
+                <img src="img/whispurr3.png" alt="Project Screenshot 3" class="screenshot-ios">
+                <img src="img/whispurr4.png" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/whispurr5.png" alt="Project Screenshot 5" class="screenshot-ios">
+                <img src="img/whispurr6.png" alt="Project Screenshot 6" class="screenshot-ios">
+                <img src="img/whispurr7.png" alt="Project Screenshot 7" class="screenshot-ios">
+                <img src="img/whispurr8.png" alt="Project Screenshot 8" class="screenshot-ios">
+                <img src="img/whispurr9.png" alt="Project Screenshot 9" class="screenshot-ios">
+            </div>
+        </section>
+
+        <!-- Project Row 2 - Whatever -->
+        <section class="project-row">
+            <div class="project-info">
+                <h2 class="project-title">Project Name 2</h2>
+                <p class="project-description">
+                    Description of the second project showcasing different skills and technologies. 
+                    This project demonstrates expertise in another area and shows versatility in 
+                    problem-solving approaches and technical implementation.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/whatever1.png" alt="Project Screenshot 1" class="screenshot-ios">
+                <img src="img/whatever2.png" alt="Project Screenshot 2" class="screenshot-ios">
+                <img src="img/whatever3.png" alt="Project Screenshot 3" class="screenshot-ios">
+                <img src="img/whatever4.png" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/whatever5.png" alt="Project Screenshot 5" class="screenshot-ios">
+                <img src="img/whatever6.png" alt="Project Screenshot 6" class="screenshot-ios">
+                <img src="img/whatever7.png" alt="Project Screenshot 7" class="screenshot-ios">
+            </div>
+        </section>
+
+        <!-- Project Row 3 - OneMinuteApp -->
+        <section class="project-row">
+            <div class="project-info">
+                <h2 class="project-title">Project Name 3</h2>
+                <p class="project-description">
+                    A comprehensive project that demonstrates full-stack development capabilities. 
+                    This project includes both frontend and backend components, showcasing the ability 
+                    to work across the entire technology stack and deliver complete solutions.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/oneminute1.png" alt="Project Screenshot 1" class="screenshot-ios">
+                <img src="img/oneminute2.png" alt="Project Screenshot 2" class="screenshot-ios">
+                <img src="img/oneminute3.png" alt="Project Screenshot 3" class="screenshot-ios">
+                <img src="img/oneminute4.png" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/oneminute5.png" alt="Project Screenshot 5" class="screenshot-ios">
+                <img src="img/oneminute6.png" alt="Project Screenshot 6" class="screenshot-ios">
+                <img src="img/oneminute7.png" alt="Project Screenshot 7" class="screenshot-ios">
+            </div>
+        </section>
+
+        <!-- Project Row 4 - UnityGameEngine -->
+        <section class="project-row">
+            <div class="project-info">
+                <h2 class="project-title">Project Name 4</h2>
+                <p class="project-description">
+                    An innovative project that showcases creative problem-solving and technical expertise. 
+                    This project demonstrates the ability to work with complex systems and deliver 
+                    high-quality solutions that meet user needs and exceed expectations.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Game Development</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/unity1.png" alt="Project Screenshot 1" class="screenshot">
+                <img src="img/unity2.png" alt="Project Screenshot 2" class="screenshot">
+                <img src="img/unity3.png" alt="Project Screenshot 3" class="screenshot">
+                <img src="img/unity4.png" alt="Project Screenshot 4" class="screenshot">
+            </div>
+        </section>
+
+        <!-- Project Row 5 - MetaquestExperiment -->
+        <section class="project-row">
+            <div class="project-info">
+                <h2 class="project-title">Project Name 5</h2>
+                <p class="project-description">
+                    A cutting-edge project that explores emerging technologies and innovative approaches. 
+                    This project demonstrates forward-thinking and the ability to work with 
+                    next-generation platforms and frameworks.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">VR/AR</span>
+                    <span class="tech-tag">Meta Quest</span>
+                    <span class="tech-tag">3D Development</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/metaquest1.png" alt="Project Screenshot 1" class="screenshot">
+                <img src="img/metaquest2.png" alt="Project Screenshot 2" class="screenshot">
+                <img src="img/metaquest3.png" alt="Project Screenshot 3" class="screenshot">
+            </div>
+        </section>
+
+        <!-- Project Row 6 - GestureDetection -->
+        <section class="project-row">
+            <div class="project-info">
+                <h2 class="project-title">Project Name 6</h2>
+                <p class="project-description">
+                    A sophisticated project that demonstrates expertise in computer vision and machine learning. 
+                    This project showcases the ability to work with complex algorithms and 
+                    create intelligent systems that can interpret and respond to human gestures.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/gesture1.png" alt="Project Screenshot 1" class="screenshot">
+                <img src="img/gesture2.png" alt="Project Screenshot 2" class="screenshot">
+                <img src="img/gesture3.png" alt="Project Screenshot 3" class="screenshot">
+            </div>
+        </section>
+
+        <!-- Project Row 7 - ImageClassification -->
+        <section class="project-row">
+            <div class="project-info">
+                <h2 class="project-title">Project Name 7</h2>
+                <p class="project-description">
+                    A comprehensive machine learning project that demonstrates expertise in image processing 
+                    and classification algorithms. This project showcases the ability to build 
+                    intelligent systems that can accurately categorize and analyze visual data.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Deep Learning</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Image Processing</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/imageclass1.png" alt="Project Screenshot 1" class="screenshot">
+                <img src="img/imageclass2.png" alt="Project Screenshot 2" class="screenshot">
+                <img src="img/imageclass3.png" alt="Project Screenshot 3" class="screenshot">
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
