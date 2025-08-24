@@ -31,6 +31,40 @@
 
     <!-- Main Content -->
     <main class="main-content">
+        <section class="project-row">
+            <div class="project-info">
+                <h2 class="project-title">Text To Shape AWS Project</h2>
+                <p class="project-description">
+                    This project combines cloud engineering, AI, and security on AWS. Primarily for fun and learning.
+                    I built a Flask API on EC2 that takes natural language input, uses AWS Bedrock to turn it into a JSON command, 
+                    and then draws the requested shape with Python Pillow. The image is saved in S3, 
+                    and users get a presigned URL that expires after 10 minutes. To keep it secure, I applied 
+                    IAM least privilege, input validation, rate limiting, and CloudWatch monitoring. 
+                    I could have used services like Lambda, SageMaker, or Route 53 with a domain and HTTPS, but I avoided them to stay simple and within Free Tier. 
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Cloud Engineering</span>
+                    <span class="tech-tag">AI Engineering</span>
+                    <span class="tech-tag">StreamLit</span>
+                    <span class="tech-tag">Phyton</span>
+                    <span class="tech-tag">S3 Bucket</span>
+                    <span class="tech-tag">EC2 Server</span>
+                    <span class="tech-tag">Bredrock AI</span>
+                    <span class="tech-tag">IAM</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/Step-1-User-Input-The-Creative-Seed.png" alt="Match3 Screenshot 1" class="screenshot">
+                <img src="img/Step-2-Flask-API-on-EC2-Receives-Request.png" alt="Match3 Screenshot 2" class="screenshot">
+                <img src="img/Step-3-Flask-API-Calls-AWS-Bedrock.png" alt="Match3 Screenshot 3" class="screenshot">
+                <img src="img/Step-4-Pillow-Library-Draws-Image.png" alt="Match3 Screenshot 4" class="screenshot">
+                <img src="img/Step-5-Image-Saved-in-S3-Bucket.png" alt="Match3 Screenshot 5" class="screenshot">
+                <img src="img/Step-6-Presigned-URL-Generated.png" alt="Match3 Screenshot 6" class="screenshot">
+                <img src="img/step9.png" alt="Match3 Screenshot 5" class="screenshot">
+                <img src="img/step10.png" alt="Match3 Screenshot 6" class="screenshot">
+            </div>
+        </section>
         <!-- Project Row 0 - Match3 -->
         <section class="project-row">
             <div class="project-info">
@@ -227,7 +261,7 @@
         <!-- Project Row 5 - MetaquestExperiment -->
         <section class="project-row">
             <div class="project-info">
-                <h2 class="project-title">Meta Quest Experiment</h2>
+                <h2 class="project-title">Q1 Journal Paper</h2>
                 <p class="project-description">
                     This master course's term project is about conducting experiments on students using Meta Quest 3 for daily tasks.
                     Several tasks were defined, and students were asked to perform them with and without Meta Quest 3.
