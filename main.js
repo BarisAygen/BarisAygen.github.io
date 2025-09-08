@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Add click effect to screenshots
     const screenshots = document.querySelectorAll('.screenshot');
     screenshots.forEach(screenshot => {
         screenshot.addEventListener('click', function() {
-            // Add a temporary click effect
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 this.style.transform = '';
