@@ -1,6 +1,5 @@
-# BarisAygen.github.io
+# barisaygen.com
 
 This is a website is created as my portfolio. 
 
-https://barisaygen.github.io
-
+https://barisaygn.com

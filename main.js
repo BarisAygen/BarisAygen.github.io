@@ -1,4 +1,3 @@
-// Smooth interactions and effects
 document.addEventListener('DOMContentLoaded', function() {
     
     // Add click effect to screenshots
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add smooth reveal animation for project rows
     const projectRows = document.querySelectorAll('.project-row');
     const observerOptions = {
         threshold: 0.1,
@@ -29,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Initialize project rows with fade-in effect
     projectRows.forEach((row, index) => {
         row.style.opacity = '0';
         row.style.transform = 'translateY(30px)';
@@ -37,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(row);
     });
 
-    // Add hover sound effect simulation (visual feedback)
     const interactiveElements = document.querySelectorAll('.contact-link, .tech-tag, .screenshot');
     interactiveElements.forEach(element => {
         element.addEventListener('mouseenter', function() {
@@ -45,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scroll for any anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -59,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add loading animation
     window.addEventListener('load', function() {
         document.body.style.opacity = '0';
         document.body.style.transition = 'opacity 0.5s ease';
@@ -69,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     });
 
-    // Add keyboard navigation support
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Tab') {
             document.body.classList.add('keyboard-navigation');
@@ -80,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.remove('keyboard-navigation');
     });
 
-    // Add ripple effect to contact links
     const contactLinks = document.querySelectorAll('.contact-link');
     contactLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -104,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add CSS for ripple effect
 const style = document.createElement('style');
 style.textContent = `
     .contact-link {
