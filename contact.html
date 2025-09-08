@@ -4,36 +4,130 @@
   <meta charset="UTF-8">
   <title>Contact - Baris Aygen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+  <style>
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+    
+    .send-button:hover {
+      background: #555;
+    }
+    
+    .social-links a:hover {
+      color: #007bff;
+    }
+    
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column !important;
+        gap: 30px !important;
+      }
+      
+      .map-container iframe {
+        height: 250px !important;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="header-content">
-      <div class="logo-section">
-        <img src="img/headerImage.png" alt="Logo" class="logo">
-        <h1 class="page-title">Baris Aygen</h1>
-      </div>
-      <nav class="nav-links">
-        <a href="index.html" title="Go to Home Page">Home</a>
-        <a href="privacy.html" title="View Privacy Policy">Privacy</a>
-        <a href="contact.html" title="Contact Me">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div id="header-placeholder"></div>
 
   <main class="main-content">
-    <section class="project-row" style="display:block;">
-      <div class="project-info">
-        <h2 class="project-title">Contact / Support</h2>
-        <p class="project-description">
-          For questions, feedback, or support, feel free to reach out to me.
+    <section class="contact-section" style="display: flex; gap: 40px; max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+      
+      <div class="contact-form-section" style="flex: 1;">
+        <h2 class="project-title" style="margin-bottom: 20px;">GET IN TOUCH</h2>
+        <p class="project-description" style="margin-bottom: 30px;">
+          <strong>If you have any questions,</strong> I am looking forward to meet you.
         </p>
-        <p class="project-description">
-          📧 Email: <a href="mailto:baris.aygen@icloud.com" title="Send me an email">baris.aygen@icloud.com</a><br>
-          🔗 Linktree: <a href="https://linktr.ee/barisaygen" class="contact-link" target="_blank" rel="noopener" title="Visit my Linktree profile">Visit Linktree</a>
-        </p>
+        
+        <form class="contact-form" id="contactForm" style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Name" required 
+                   style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px; font-family: inherit; transition: border-color 0.3s;">
+          </div>
+          
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required 
+                   style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px; font-family: inherit; transition: border-color 0.3s;">
+          </div>
+          
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required 
+                   style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px; font-family: inherit; transition: border-color 0.3s;">
+          </div>
+          
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Message" rows="6" required 
+                      style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px; font-family: inherit; resize: vertical; transition: border-color 0.3s;"></textarea>
+          </div>
+          
+          <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+            <input type="checkbox" id="privacy" name="privacy" required 
+                   style="width: 18px; height: 18px;">
+            <label for="privacy" style="font-size: 14px; color: #666;">
+              I have read the <a href="privacy.html" style="color: #007bff; text-decoration: none; font-weight: 600;">Privacy Policy</a> and accept the terms.
+            </label>
+          </div>
+          
+          <button type="submit" class="send-button" 
+                  style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-size: 16px; font-weight: 500; cursor: pointer; transition: background-color 0.3s; align-self: flex-start;">
+            Send
+          </button>
+        </form>
       </div>
+      
+      <div class="contact-info-section" style="flex: 1;">
+        <div class="map-container" style="margin-bottom: 30px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12048.803727531104!2d29.0528712!3d40.9770808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac79be9af0bb3%3A0x265b6b1e4c1e081!2zR8O2enRlcGUsIDM0NzMwIEthZMSxa8O2eS_EsHN0YW5idWw!5e0!3m2!1sen!2str!4v1757341428350!5m2!1sen!2str"
+            width="100%" 
+            height="300" 
+            style="border:0; border-radius: 8px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-item" style="margin-bottom: 20px;">
+            <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #333;">Istanbul, Turkey</h3>
+            <p style="color: #666; line-height: 1.5;">
+              Ressam Salih Ermez Street<br>
+              Istanbul, Kadikoy
+            </p>
+          </div>
+          
+          <div class="contact-item" style="margin-bottom: 20px;">
+            <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #333;">E-mail</h3>
+            <p style="color: #666;">
+              <a href="mailto:baris.aygen@icloud.com" style="color: #007bff; text-decoration: none;">
+                baris.aygen@icloud.com
+              </a>
+            </p>
+          </div>
+          
+          <div class="contact-item" style="margin-bottom: 20px;">
+            <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #333;">Follow our work</h3>
+            <div class="social-links" style="display: flex; gap: 15px;">
+              <a href="https://linktr.ee/barisaygen" target="_blank" rel="noopener" 
+                 style="color: #333; font-size: 24px; text-decoration: none; transition: color 0.3s;">
+                <i class="fas fa-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
+
+  <script src="header.js"></script>
 </body>
 </html>
