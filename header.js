@@ -1,4 +1,3 @@
-// Header Include Function
 function loadHeader() {
     fetch('header.html')
         .then(response => response.text())
