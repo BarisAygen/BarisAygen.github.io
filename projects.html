@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="img/Icon.png">
+    <title>Projects - Baris Aygen</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="main-content">
+
+        <section class="project-row" data-categories="cloud,ai">
+            <div class="project-info">
+                <h2 class="project-title">Text To Shape AWS Project</h2>
+                <p class="project-description">
+                    This project combines cloud engineering, AI, and security on AWS. Primarily for fun and learning.
+                    I built a Flask API on EC2 that takes natural language input, uses AWS Bedrock to turn it into a JSON command, 
+                    and then draws the requested shape with Python Pillow. The image is saved in S3, 
+                    and users get a presigned URL that expires after 10 minutes. To keep it secure, I applied 
+                    IAM least privilege, input validation, rate limiting, and CloudWatch monitoring. 
+                    I could have used services like Lambda, SageMaker, or Route 53 with a domain and HTTPS, but I avoided them to stay simple and within Free Tier. 
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Cloud Engineering</span>
+                    <span class="tech-tag">AI Engineering</span>
+                    <span class="tech-tag">StreamLit</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">S3 Bucket</span>
+                    <span class="tech-tag">EC2 Server</span>
+                    <span class="tech-tag">Bedrock AI</span>
+                    <span class="tech-tag">IAM</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/Step-1-User-Input-The-Creative-Seed.png" alt="Match3 Screenshot 1" class="screenshot">
+                <img src="img/Step-2-Flask-API-on-EC2-Receives-Request.png" alt="Match3 Screenshot 2" class="screenshot">
+                <img src="img/Step-3-Flask-API-Calls-AWS-Bedrock.png" alt="Match3 Screenshot 3" class="screenshot">
+                <img src="img/Step-4-Pillow-Library-Draws-Image.png" alt="Match3 Screenshot 4" class="screenshot">
+                <img src="img/Step-5-S3-Upload-and-Presigned-URL-Generation.png" alt="Match3 Screenshot 5" class="screenshot">
+                <img src="img/Step-6-Return-Presigned-URL-to-User.png" alt="Match3 Screenshot 6" class="screenshot">
+                <img src="img/step9.png" alt="Match3 Screenshot 5" class="screenshot">
+                <img src="img/step10.png" alt="Match3 Screenshot 6" class="screenshot">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="games,mobile">
+            <div class="project-info">
+                <h2 class="project-title">Match3 Game</h2>
+                <p class="project-description">
+                    This Unity project is a match3 game which has 10 levels. Levels are designed with JSON files.
+                    It has a main menu, a level selection screen and a game over screen.
+                    Project uses Scriptable Objects, event system, addressables and object pooling for better optimization.
+                    It has cubes, rockets, obstacles, particle effects and sprites. It correctly manages to wait until all animations finish on the scene.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Game Development</span>
+                    <span class="tech-tag">Mobile Game</span>
+                    <span class="tech-tag">Game Design</span>
+                    <span class="tech-tag">2D Animation</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/Screenshot 2025-08-01 at 22.20.24.png" alt="Match3 Screenshot 1" class="screenshot">
+                <img src="img/Screenshot 2025-08-01 at 22.20.41.png" alt="Match3 Screenshot 2" class="screenshot">
+                <img src="img/Screenshot 2025-08-01 at 22.21.08.png" alt="Match3 Screenshot 3" class="screenshot">
+                <img src="img/Screenshot 2025-08-01 at 22.21.35.png" alt="Match3 Screenshot 4" class="screenshot">
+                <img src="img/Screenshot 2025-08-01 at 22.21.46.png" alt="Match3 Screenshot 5" class="screenshot">
+                <img src="img/Screenshot 2025-08-01 at 22.22.09.png" alt="Match3 Screenshot 6" class="screenshot">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="games">
+            <div class="project-info">
+                <h2 class="project-title">Unity VR Game Engine</h2>
+                <p class="project-description">
+                    This project is a VR game engine made with Unity. It is a block coding game that allows users to create their own games.
+                    It provides an easily understandable environment in which users can put assets from its library, manipulate assets' properties and create their own game.
+                    They can share and visit other users' games. Or they can share the code to open their game in VR mode. 
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Game Development</span>
+                    <span class="tech-tag">VR</span>
+                    <span class="tech-tag">Block Coding</span>
+                    <span class="tech-tag">Google Cardboard</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/unity1.png" alt="Project Screenshot 1" class="screenshot">
+                <img src="img/unity3.png" alt="Project Screenshot 3" class="screenshot">
+                <img src="img/unity2.png" alt="Project Screenshot 2" class="screenshot">
+                <img src="img/unity4.png" alt="Project Screenshot 4" class="screenshot">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="mobile,ai">
+            <div class="project-info">
+                <h2 class="project-title">Find What To Do - WhatNow</h2>
+                <p class="project-description">
+                    This is a mobile application in IOS Store made with bare react native. Application uses device id to keep track of users' data.
+                    At first start, application asks 16 questions to know the user's personality.
+                    Then user can open the app and choose between what to eat or what to eat. 
+                    Application pulls data from weather, location and ticketmaster api and creates a prompt for ChatGPT API.
+                    They get 3 recommendations according to their personality with weather and location.
+                    Like dating applications, user can like or dislike the recommendations to match with them.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">IOS</span>
+                    <span class="tech-tag">RevenueCat</span>
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">AI</span>
+                    <span class="tech-tag">ChatGPT API</span>
+                    <span class="tech-tag">Location API</span>
+                    <span class="tech-tag">Weather API</span>
+                    <span class="tech-tag">Ticketmaster API</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/paywall_W.png" alt="Project Screenshot 1" class="screenshot-ios">
+                <img src="img/1.Profeel.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Frame 33.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Frame 34.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Frame 35.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Frame 36.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Frame 37.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Frame 38.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Frame 39.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="mobile,ai">
+            <div class="project-info">
+                <h2 class="project-title">Banana Photo Agent - BananAgent</h2>
+                <p class="project-description">
+                    This is a mobile application in IOS Store made with Swift. When Gemini has announced their new AI "Nano Banana",
+                    I noticed it is quite powerful and decided to use its API to make a mobile application. Users can upload images 
+                    and enter prompt to generate new image using API. They can see their own generated images and they have a discovery screen.
+                    For each generation, users spend their credits. They can buy credits via paywall.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">IOS</span>
+                    <span class="tech-tag">RevenueCat</span>
+                    <span class="tech-tag">Swift</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">AI</span>
+                    <span class="tech-tag">Gemini API</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/Store1.jpg" alt="Project Screenshot 1" class="screenshot-ios">
+                <img src="img/Store2.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Store3.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Store4.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Store5.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Store6.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/Store7.jpg" alt="Project Screenshot 4" class="screenshot-ios">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="ai, research">
+            <div class="project-info">
+                <h2 class="project-title">CBIR for fashion</h2>
+                <p class="project-description">
+                    This project uses huge database of fashion images to create a CBIR (Content Based Image Retrieval) system.
+                    It lets user to choose an image (product) and finds similar images from the database.
+                    It uses classic methods and CNN model to extract features from images and a KNN model to retrieve similar images.
+                    It also uses ML Tuning to find the best hyperparameter for the model.
+                    It uses several accuracy metrics to measure the success rate.
+                    It uses labels of found images to measure the accuracy.
+                    It also labels the chosen image.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Image Processing</span>
+                    <span class="tech-tag">CBIR</span>
+                    <span class="tech-tag">ML Tuning</span>
+                    <span class="tech-tag">Accuracy Metrics</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/imageclass1.png" alt="Project Screenshot 1" class="screenshot">
+                <img src="img/imageclass2.png" alt="Project Screenshot 2" class="screenshot">
+                <img src="img/imageclass3.png" alt="Project Screenshot 3" class="screenshot">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="research">
+            <div class="project-info">
+                <h2 class="project-title">Q1 Journal Paper</h2>
+                <p class="project-description">
+                    This master course's term project is about conducting experiments on students using Meta Quest 3 for daily tasks.
+                    Several tasks were defined, and students were asked to perform them with and without Meta Quest 3.
+                    The collected data was analyzed, and the results were presented in an article paper supported by more than 20 references.
+                    The article has been submitted to the International Journal of Human-Computer Interaction for publication.
+                    The journal is ranked as Q1, indicating its high impact and recognition in the field of Human-Computer Interaction research.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">VR/AR</span>
+                    <span class="tech-tag">Meta Quest</span>
+                    <span class="tech-tag">3D Development</span>
+                    <span class="tech-tag">Q1 Journey Article</span>
+                    <span class="tech-tag">Data Analyses</span>
+                    <span class="tech-tag">Journal</span>
+                    <span class="tech-tag">Research</span>
+
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/metaquest1.png" alt="Project Screenshot 1" class="screenshot">
+                <img src="img/metaquest2.png" alt="Project Screenshot 2" class="screenshot">
+                <img src="img/metaquest3.png" alt="Project Screenshot 3" class="screenshot">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="web">
+            <div class="project-info">
+                <h2 class="project-title">Codeway Website</h2>
+                <p class="project-description">
+                    This project is a basic mockup of codeway web.
+                    It is a full-stack configuration management system that allows application managers to log in through a responsive web panel.
+                    Users can edit app configuration parameters stored in a Firestore database, and serve these configurations via a secure REST API to mobile clients. 
+                    The panel, built with Vue 3 and Firebase Authentication, prevents concurrent edit conflicts, send updates to the backend with Firebase ID tokens.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Vue</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Vercel</span>
+                    <span class="tech-tag">Heroku</span>
+                    <span class="tech-tag">Cloud</span>
+                    <span class="tech-tag">Firebase</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/c1.png" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/c2.png" alt="Project Screenshot 4" class="screenshot-ios">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="mobile">
+            <div class="project-info">
+                <h2 class="project-title">Whispurr - Dating App</h2>
+                <p class="project-description">
+                    This is an mobile app made with Flutter. Users signup via email, choose their spirit animal and create their profile.
+                    Then in discover page they can find other users filtered by preferences. They can WHisper (message) to other users.
+                    If they like each other, they can match and start a chat. If they reach to 10 mutual message limit the photos become visible.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">Firebase</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/whispurr6.png" alt="Project Screenshot 6" class="screenshot-ios">
+                <img src="img/whispurr7.png" alt="Project Screenshot 7" class="screenshot-ios">
+                <img src="img/whispurr8.png" alt="Project Screenshot 8" class="screenshot-ios">
+                <img src="img/whispurr9.png" alt="Project Screenshot 9" class="screenshot-ios">
+                <img src="img/whispurr1.png" alt="Project Screenshot 1" class="screenshot-ios">
+                <img src="img/whispurr2.png" alt="Project Screenshot 2" class="screenshot-ios">
+                <img src="img/whispurr3.png" alt="Project Screenshot 3" class="screenshot-ios">
+                <img src="img/whispurr4.png" alt="Project Screenshot 4" class="screenshot-ios">
+                <img src="img/whispurr5.png" alt="Project Screenshot 5" class="screenshot-ios">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="mobile">
+            <div class="project-info">
+                <h2 class="project-title">One Minute - Daily Task App</h2>
+                <p class="project-description">
+                    This is an mobile app made with Flutter. Users signup via email, setup their profile by answering onboarding questions.
+                    Then everyday at a specific time, all users get notification about they get a daily task. Tasks can be completed in around 1 minute.
+                    The aim is to make people less stressful and help their phone addiction.
+                    They level up and earn badges as they complete the tasks. They can add friends and see each others' profiles.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">Firebase</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/oneminute1.png" alt="Project Screenshot 1" class="screenshot-ios">
+                <img src="img/oneminute2.png" alt="Project Screenshot 2" class="screenshot-ios">
+                <img src="img/oneminute3.png" alt="Project Screenshot 3" class="screenshot-ios">
+                <img src="img/oneminute5.png" alt="Project Screenshot 5" class="screenshot-ios">
+                <img src="img/oneminute6.png" alt="Project Screenshot 6" class="screenshot-ios">
+                <img src="img/oneminute7.png" alt="Project Screenshot 7" class="screenshot-ios">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="ai,research">
+            <div class="project-info">
+                <h2 class="project-title">Gesture Detection</h2>
+                <p class="project-description">
+                    This project is a gesture detection system made with OpenCV and MediaPipe.
+                    It lets users to use their hand gestures to control the computer.
+                    They can open the gallery, scroll 4 directions, select and click on an image.
+                    They can zoom in-out or rotate the images via face camera.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">MediaPipe</span>
+                    <span class="tech-tag">Gesture Recognition</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/gesture1.png" alt="Project Screenshot 1" class="screenshot">
+                <img src="img/gesture2.png" alt="Project Screenshot 2" class="screenshot">
+                <img src="img/gesture3.png" alt="Project Screenshot 3" class="screenshot">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="research">
+            <div class="project-info">
+                <h2 class="project-title">File Management Tools</h2>
+                <p class="project-description">
+                    A comprehensive desktop application for mac and windows that made and put on sale in Grumroad.
+                    It provides powerful file management capabilities including batch file renaming, PDF manipulation, and image processing. 
+                    The app allows users to rename dozens or hundreds of files in seconds with custom base names, preview results before committing, and undo mistakes. 
+                    For PDFs, users can split or extract specific pages, merge multiple PDFs, delete unwanted pages, and handle password-protected documents. 
+                    The image processing feature enables quick resizing with custom dimensions, format conversion, and preview functionality. 
+                    All operations are performed offline, ensuring user privacy and data security.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">File Management</span>
+                    <span class="tech-tag">Desktop Application</span>
+                    <span class="tech-tag">PDF Manipulation</span>
+                    <span class="tech-tag">Image Processing</span>
+                    <span class="tech-tag">Offline Processing</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/ChatGPT%20Image%20Jun%2027,%202025%20at%2010_18_56%20AM.png" alt="File Management Tools Screenshot 1" class="screenshot">
+                <img src="img/ChatGPT%20Image%20Jun%2023,%202025%20at%2010_07_06%20PM.png" alt="File Management Tools Screenshot 2" class="screenshot">
+                <img src="img/ChatGPT%20Image%20Jun%205,%202025%20at%2005_01_06%20PM.png" alt="File Management Tools Screenshot 3" class="screenshot">
+                <img src="img/ss.png" alt="File Management Tools Screenshot 4" class="screenshot">
+            </div>
+        </section>
+        
+        <section class="project-row" data-categories="ai">
+            <div class="project-info">
+                <h2 class="project-title">AI Templates Bundle</h2>
+                <p class="project-description">
+                    A comprehensive digital product bundle featuring six AI-powered productivity tools and templates that made and put on sale in Grumroad.
+                    The collection includes a 1-month goal planner for structured achievement, an ultimate email template toolkit with 50+ professional templates, 
+                    a YouTube video ideas vault for content creators, an AI income guide for passive revenue generation, an AI interview coach with ChatGPT prompts for job seekers,
+                    and 50+ AI prompts specifically designed for content creators across multiple platforms. 
+                    Each product is designed to leverage AI technology to enhance productivity, creativity, and professional development.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">AI Integration</span>
+                    <span class="tech-tag">Productivity Tools</span>
+                    <span class="tech-tag">Content Creation</span>
+                    <span class="tech-tag">Digital Products</span>
+                    <span class="tech-tag">ChatGPT Prompts</span>
+                    <span class="tech-tag">Template Design</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/Kids%E2%80%99%20Planner.png" alt="AI Templates - Goal Planner" class="screenshot">
+                <img src="img/Add%20a%20subheading.png" alt="AI Templates - Email Templates" class="screenshot">
+                <img src="img/ChatGPT%20Image%20Jun%206,%202025%20at%2012_05_14%20AM.png" alt="AI Templates - Content Creation" class="screenshot">
+                <img src="img/ChatGPT%20Image%20Jun%208,%202025%20at%2008_57_21%20PM.png" alt="AI Templates - Interview Coach" class="screenshot">
+                <img src="img/ChatGPT%20Image%20Jun%204,%202025%20at%2011_30_33%20PM.png" alt="AI Templates - AI Prompts" class="screenshot">
+                <img src="img/Screenshot%202025-07-15%20at%2022.49.23.png" alt="AI Templates - Screenshot 2" class="screenshot">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="header.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+

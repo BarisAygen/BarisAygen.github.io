@@ -92,6 +92,36 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 600);
         });
     });
+
+    // Navigate to projects with filter from index buttons
+    const filterButtons = document.querySelectorAll('.filter-button');
+    console.log('Found filter buttons:', filterButtons.length);
+    if (filterButtons.length > 0) {
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                console.log('Button clicked, filter:', filter);
+                const url = 'projects.html?category=' + encodeURIComponent(filter);
+                console.log('Navigating to:', url);
+                window.location.href = url;
+            });
+        });
+    }
+
+    // If on projects page, filter by ?category=
+    const isProjects = /\/projects\.html?$/.test(window.location.pathname) || document.title.toLowerCase().includes('projects');
+    if (isProjects) {
+        const params = new URLSearchParams(window.location.search);
+        const category = (params.get('category') || '').toLowerCase();
+        const rows = document.querySelectorAll('.project-row');
+        if (category && rows.length > 0) {
+            rows.forEach(row => {
+                const cats = (row.getAttribute('data-categories') || '').toLowerCase();
+                const show = cats.split(',').map(s => s.trim()).filter(Boolean).includes(category);
+                row.style.display = show ? '' : 'none';
+            });
+        }
+    }
 });
 
 const style = document.createElement('style');
