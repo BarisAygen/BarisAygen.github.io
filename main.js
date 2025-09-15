@@ -115,9 +115,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const category = (params.get('category') || '').toLowerCase();
         const rows = document.querySelectorAll('.project-row');
         if (category && rows.length > 0) {
+            const filterCategories = category.split(',').map(s => s.trim()).filter(Boolean);
+            
             rows.forEach(row => {
-                const cats = (row.getAttribute('data-categories') || '').toLowerCase();
-                const show = cats.split(',').map(s => s.trim()).filter(Boolean).includes(category);
+                const projectCategories = (row.getAttribute('data-categories') || '').toLowerCase()
+                    .split(',').map(s => s.trim()).filter(Boolean);
+                
+                const show = filterCategories.some(filterCat => 
+                    projectCategories.includes(filterCat)
+                );
+                
                 row.style.display = show ? '' : 'none';
             });
         }
