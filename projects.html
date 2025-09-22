@@ -19,6 +19,35 @@
 
         <section class="project-row" data-categories="cloud,ai">
             <div class="project-info">
+                <h2 class="project-title">AI Interviewer AWS Project</h2>
+                <p class="project-description">
+                    This project is a cloud-based CV analyzer built with AWS. Users upload their résumé (PDF/DOCX) via a static web frontend, which sends the file to S3 through a presigned URL. 
+                    A Lambda function then extracts the text using Amazon Textract, and another Lambda powered by Amazon Bedrock parses the text into structured JSON (name, contact details, skills, 
+                    experience, education). Finally, an ATS scoring function compares the parsed CV against a given job description to highlight strengths and missing keywords. The frontend 
+                    guides the user through upload, parsing, and scoring, while the backend is serverless, secure, and scalable through API Gateway and Lambda. Then Bedrock Ai mocks an interview with the user accordingly.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Cloud Engineering</span>
+                    <span class="tech-tag">AI Engineering</span>
+                    <span class="tech-tag">API Gateway</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">S3 Bucket</span>
+                    <span class="tech-tag">Lambda</span>
+                    <span class="tech-tag">Bedrock AI</span>
+                    <span class="tech-tag">IAM</span>
+                </div>
+            </div>
+            <div class="project-screenshots">
+                <img src="img/ats1.png" alt="Match3 Screenshot 1" class="screenshot">
+                <img src="img/ats2.png" alt="Match3 Screenshot 2" class="screenshot">
+                <img src="img/ats3.png" alt="Match3 Screenshot 3" class="screenshot">
+                <img src="img/ats4.png" alt="Match3 Screenshot 4" class="screenshot">
+            </div>
+        </section>
+
+        <section class="project-row" data-categories="cloud,ai">
+            <div class="project-info">
                 <h2 class="project-title">Text To Shape AWS Project</h2>
                 <p class="project-description">
                     This project combines cloud engineering, AI, and security on AWS. Primarily for fun and learning.
