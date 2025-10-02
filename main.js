@@ -1,4 +1,56 @@
+// Image optimization utilities
+function optimizeImages() {
+    // Add lazy loading to all images that don't have it
+    const images = document.querySelectorAll('img:not([loading])');
+    images.forEach(img => {
+        if (!img.classList.contains('hero-image')) { // Keep hero image eager
+            img.setAttribute('loading', 'lazy');
+        }
+    });
+
+    // Add intersection observer for better lazy loading control
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                }
+            });
+        });
+
+        // Observe all lazy images
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+}
+
+// Preload critical images
+function preloadCriticalImages() {
+    const criticalImages = [
+        'img/hero.png',
+        'img/headerImage.png',
+        'img/aboutss.png'
+    ];
+    
+    criticalImages.forEach(src => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = src;
+        document.head.appendChild(link);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize image optimizations
+    optimizeImages();
+    preloadCriticalImages();
     
     const screenshots = document.querySelectorAll('.screenshot');
     screenshots.forEach(screenshot => {
