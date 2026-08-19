@@ -14,6 +14,7 @@ function loadHeader() {
                             <h1 class="page-title"><a href="index.html" style="text-decoration: none; color: inherit;">Baris Aygen</a></h1>
                         </div>
                         <nav class="nav-links">
+                            <a href="Baris_Aygen_resume.pdf" download="Baris_Aygen_Resume.pdf">Resume</a>
                             <a href="privacy.html">Privacy</a>
                             <a href="contact.html">Contact</a>
                         </nav>
